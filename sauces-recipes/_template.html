@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE_ZH}}（{{TITLE_EN}}）</title>
+<style>
+  :root { --green: #1b5e20; --cream: #faf6ef; --dark: #2b2b2b; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: var(--cream); color: var(--dark); line-height: 1.7; }
+  header { background: var(--green); color: #fff; padding: 32px 20px; text-align: center; }
+  header h1 { font-size: 1.7rem; }
+  header .en { font-size: 1rem; opacity: 0.9; font-style: italic; margin-top: 6px; }
+  main { max-width: 780px; margin: 0 auto; padding: 28px 16px 60px; }
+  .back { display: inline-block; margin-bottom: 20px; color: var(--green); text-decoration: none; font-size: 0.9rem; }
+  .back:hover { text-decoration: underline; }
+  .intro { background: #fff; border-left: 4px solid var(--green); padding: 14px 18px; margin-bottom: 28px; border-radius: 0 8px 8px 0; }
+  h2 { font-size: 1.25rem; color: var(--green); border-left: 5px solid var(--green); padding-left: 12px; margin: 28px 0 14px; }
+  .meta { font-size: 0.85rem; color: #777; margin-bottom: 6px; }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .ing li .zh { font-weight: 600; }
+  .ing li .en { color: #888; font-size: 0.85em; }
+  footer { text-align: center; color: #999; font-size: 0.8rem; padding: 20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>{{TITLE_ZH}}</h1>
+  <div class="en">{{TITLE_EN}}</div>
+</header>
+<main>
+  <a class="back" href="../sauces.html">&larr; 返回酱汁大全</a>
+  <div class="intro">{{INTRO}}</div>
+  <p class="meta">{{META}}</p>
+  <h2>食材</h2>
+  <ul class="ing">{{INGREDIENTS}}</ul>
+  <h2>步骤</h2>
+  <ol>{{STEPS}}</ol>
+  {{TIPS_BLOCK}}
+  <h2>来源</h2>
+  <p><a href="{{SOURCE}}">{{SOURCE}}</a></p>
+</main>
+<footer>翻译整理自 Vincenzo's Plate</footer>
+</body>
+</html>
