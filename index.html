@@ -3,310 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vincenzo's Plate 意面大全</title>
+<title>Vincenzo's Plate 中文菜谱</title>
 <style>
   :root { --green: #1b5e20; --cream: #faf6ef; --dark: #2b2b2b; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: var(--cream); color: var(--dark); line-height: 1.6; }
-  header { background: var(--green); color: #fff; padding: 40px 20px; text-align: center; }
-  header h1 { font-size: 2rem; margin-bottom: 8px; }
-  header p { opacity: 0.9; font-size: 0.95rem; }
-  header .count { display: inline-block; margin-top: 12px; background: rgba(255,255,255,0.2); padding: 4px 14px; border-radius: 20px; font-size: 0.85rem; }
-  main { max-width: 960px; margin: 0 auto; padding: 24px 16px 60px; }
-  section { margin-bottom: 36px; }
-  h2 { font-size: 1.3rem; color: var(--green); border-left: 5px solid var(--green); padding-left: 12px; margin-bottom: 16px; }
-  ul { list-style: none; }
-  li { background: #fff; border: 1px solid #e8e0d2; border-radius: 10px; padding: 12px 16px; margin-bottom: 10px; display: flex; gap: 12px; align-items: baseline; }
-  li .name { font-weight: 600; min-width: 280px; color: var(--dark); text-decoration: none; }
-  li .name:hover { color: var(--green); text-decoration: underline; }
-  li .desc { color: #555; font-size: 0.92rem; flex: 1; }
-  footer { text-align: center; color: #999; font-size: 0.8rem; padding: 20px; }
-  @media (max-width: 640px) { li { flex-direction: column; gap: 4px; } li .name { min-width: 0; } }
+  header { background: var(--green); color: #fff; padding: 48px 20px; text-align: center; }
+  header h1 { font-size: 2rem; margin-bottom: 10px; }
+  header p { opacity: 0.9; }
+  main { max-width: 640px; margin: 0 auto; padding: 40px 16px; }
+  .card {
+    display: block; background: #fff; border: 1px solid #e8e0d2; border-radius: 14px;
+    padding: 28px; margin-bottom: 20px; text-decoration: none; color: var(--dark);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(27,94,32,.12); }
+  .card h2 { color: var(--green); font-size: 1.5rem; margin-bottom: 6px; }
+  .card .en { color: #888; font-size: .85rem; font-style: italic; margin-bottom: 10px; }
+  .card p { color: #555; font-size: .92rem; }
+  .card .count { display: inline-block; margin-top: 12px; background: var(--cream); border: 1px solid #e8e0d2; padding: 3px 12px; border-radius: 20px; font-size: .82rem; color: var(--green); }
+  footer { text-align: center; color: #999; font-size: .8rem; padding: 24px; }
 </style>
 </head>
 <body>
 <header>
-  <h1>Vincenzo's Plate 意面大全</h1>
-  <p>来源：<a href="https://www.vincenzosplate.com/category/recipes/collection/pasta/" style="color:#fff">vincenzosplate.com 意面专栏</a></p>
-  <span class="count">共 180 道 · 点击菜名查看中文翻译子页面</span>
+  <h1>Vincenzo's Plate 中文菜谱</h1>
+  <p>意大利家常菜谱全中文翻译</p>
 </header>
-
 <main>
-
-<section>
-  <h2>罗马经典</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/spaghetti-alla-carbonara.html">Spaghetti alla Carbonara（培根蛋酱意面）</a><span class="desc">罗马正宗做法：猪颊肉配蛋黄与佩科里诺芝士，坚决不放奶油。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-alla-carbonara-recipe.html">Spaghetti alla Carbonara（培根蛋酱意面）</a><span class="desc">用蒸汽加热法做最丝滑的罗马经典 carbonara，兼顾焦脆口感。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-carbonara-recipe.html">Spaghetti Carbonara（意式培根蛋酱面）</a><span class="desc">只用鸡蛋不用奶油的罗马正宗 carbonara。</span></li>
-    <li><a class="name" href="pasta-recipes/carbonara-egg-yolks-only.html">The Ultimate Carbonara, Egg Yolks Only（终极 Carbonara·只用蛋黄）</a><span class="desc">只用四个蛋黄、面水不加盐，以蒸汽收尾做出极致丝滑的现代卡博纳拉。</span></li>
-    <li><a class="name" href="pasta-recipes/carbonara-in-the-80s.html">Carbonara in the 80s（80 年代做法 Carbonara）</a><span class="desc">用全蛋、保留胡椒层的 guanciale，重现 80 年代"半炒蛋"质地的老派卡博纳拉。</span></li>
-    <li><a class="name" href="pasta-recipes/modern-spaghetti-carbonara.html">Modern Spaghetti Carbonara（现代版培根蛋酱意面）</a><span class="desc">经典 carbonara 的改良版，蛋黄糊裹住煎脆的 guanciale，依然无奶油、更绵密。</span></li>
-    <li><a class="name" href="pasta-recipes/carbonara-for-large-group-of-10-people.html">Carbonara for 10 People（十人份培根蛋酱意面）</a><span class="desc">用 Guanciale、鸡蛋与 Pecorino 一次做出 10 人份丝滑 Carbonara。</span></li>
-    <li><a class="name" href="pasta-recipes/vegetarian-carbonara.html">Vegetarian Carbonara（素食卡邦尼意面）</a><span class="desc">用煎西葫芦与大蒜复刻 guanciale 风味的绵滑素食卡邦尼。</span></li>
-    <li><a class="name" href="pasta-recipes/cacio-e-pepe-pasta.html">Cacio e Pepe（芝士胡椒意面）</a><span class="desc">三味食材加一点信任，用少水无盐法让酱汁更稳不易结块。</span></li>
-    <li><a class="name" href="pasta-recipes/cacio-e-pepe.html">Cacio e Pepe（芝士胡椒意面）</a><span class="desc">罗马经典，佩科里诺罗马诺与黑胡椒的极简滑顺之作。</span></li>
-    <li><a class="name" href="pasta-recipes/no-fail-cacio-e-pepe.html">No Fail Cacio e Pepe（零失败奶酪胡椒意面）</a><span class="desc">黄油加煮面水搅出无结块丝滑芝士酱的罗马经典。</span></li>
-    <li><a class="name" href="pasta-recipes/cacio-e-pepe-with-shrimp.html">Cacio e Pepe with Shrimp（虾仁版卡乔佩佩意面）</a><span class="desc">罗马经典邂逅鲜虾塔塔与青柠，不用奶油却丝滑。</span></li>
-    <li><a class="name" href="pasta-recipes/bucatini-allamatriciana.html">Bucatini all'Amatriciana（阿马特里恰酱布加蒂尼意面）</a><span class="desc">中空意面吸满 guanciale 与番茄酱，秘诀是加入樱桃番茄。</span></li>
-    <li><a class="name" href="pasta-recipes/amatriciana-recipe.html">Pasta Amatriciana（阿马特里切意面）</a><span class="desc">三种食材复刻罗马经典，番茄配 guanciale 的咸香浓郁。</span></li>
-    <li><a class="name" href="pasta-recipes/amatriciana.html">Amatriciana（阿马特里切意面）</a><span class="desc">以 guanciale 和 Pecorino Romano 熬煮的罗马经典，加圣女果的私房变奏。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-alla-gricia-recipe.html">Pasta alla Gricia（格里西亚意面）</a><span class="desc">Carbonara 与 Cacio e Pepe 的「爱情结晶」，只靠奶酪与 guanciale 却格外丝滑。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-alla-gricia.html">Pasta alla Gricia（胡椒猪油意面）</a><span class="desc">罗马经典四重奏之一，guanciale 配 Pecorino 干酪糊与现磨黑胡椒，极简却浓郁。</span></li>
-    <li><a class="name" href="pasta-recipes/penne-all-arrabbiata.html">Penne all'Arrabbiata（辣味笔管面）</a><span class="desc">番茄、辣椒、大蒜的罗马经典「愤怒」辣面。</span></li>
-    <li><a class="name" href="pasta-recipes/penne-arrabbiata.html">Penne Arrabbiata（尖椒笔管意面）</a><span class="desc">蒜、辣椒与去皮番茄的 20 分钟「愤怒」辣味快手面。</span></li>
-    <li><a class="name" href="pasta-recipes/arrabbiata-sauce.html">Arrabbiata Sauce（阿辣比亚塔辣番茄酱意面）</a><span class="desc">名字意为"愤怒"的辣椒番茄酱，大胆浓烈的素食经典。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-alla-zozzona.html">Pasta alla Zozzona（罗马"脏脏"意面）</a><span class="desc">Carbonara 与 Amatriciana 的结合体，猪肉、鸡蛋与番茄的奢华混搭。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-allassassina.html">Spaghetti all'Assassina（杀手意面）</a><span class="desc">不煮而煎、烤到焦脆的「杀手意面」，配 Stracciatella 中和辣劲。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>西西里与南方风味</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/spaghetti-alla-carrettiera.html">Spaghetti alla Carrettiera（西西里马夫意面）</a><span class="desc">生酱拌热面，撒烤面包屑与佩科里诺的西西里版本。</span></li>
-    <li><a class="name" href="pasta-recipes/sicilian-pasta-alla-norma.html">Sicilian Pasta alla Norma（西西里诺玛意面）</a><span class="desc">酥脆炸茄裹浓郁番茄酱、铺咸香奶酪的西西里素食经典。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-alla-norma-recipe.html">Pasta alla Norma（诺玛意面）</a><span class="desc">脆炸茄子配咸香 Ricotta Salata 与浓郁番茄酱，菜名源自歌剧《诺玛》。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-alla-nerano-recipe.html">Spaghetti alla Nerano（内拉诺炸节瓜意面）</a><span class="desc">炸西葫芦配 Provolone 与 Pecorino，不假奶油却奶油感十足的阿马尔菲经典。</span></li>
-    <li><a class="name" href="pasta-recipes/fried-zucchini-pasta.html">Fried Zucchini Pasta（炸西葫芦意面）</a><span class="desc">1952 年渔村名菜 Spaghetti alla Nerano 的奶油双奶酪版。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-con-le-sarde.html">Pasta con le Sarde（西西里沙丁鱼意面）</a><span class="desc">中世纪经典，沙丁鱼配野茴香、松子、葡萄干与藏红花。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-alla-puttanesca.html">Pasta alla Puttanesca（普坦内斯卡意面）</a><span class="desc">用橄榄、刺山柑与鳀鱼做的省钱快手那不勒斯「风尘」意面。</span></li>
-    <li><a class="name" href="pasta-recipes/puttanesca-sauce.html">Puttanesca Sauce（妓女酱意面）</a><span class="desc">番茄、橄榄、酸豆、大蒜与鳀鱼交织的浓烈那不勒斯风味酱。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-allo-scarpariello-with-cherry-tomatoes.html">Pasta allo Scarpariello（小番茄斯卡尔皮埃罗意面）</a><span class="desc">那不勒斯补鞋匠的智慧，双奶酪小番茄酱 10 分钟上桌。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-alla-natalina.html">Spaghetti alla Natalina（纳塔利娜意面）</a><span class="desc">那不勒斯风味意面，鳀鱼融化进核桃、葡萄干与橄榄交织的浓郁酱汁。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-alla-buttera.html">Pasta alla Buttera（托斯卡纳牧人意面）</a><span class="desc">猪肉香肠、橄榄与红辣椒的 20 分钟一锅辣面。</span></li>
-    <li><a class="name" href="pasta-recipes/anellini-alla-pecorara.html">Anellini alla Pecorara（佩科拉拉小圈意面）</a><span class="desc">茄子、甜椒、西葫芦与自制小圈意面的阿布鲁佐素食经典。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>蒜香橄榄油</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/spaghetti-aglio-e-olio-recipe.html">Spaghetti Aglio e Olio（蒜香橄榄油意面）</a><span class="desc">大蒜、橄榄油与辣椒就能做出的极致简单那不勒斯意面。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-aglio-olio.html">Spaghetti Aglio Olio e Peperoncino（蒜香橄榄油意面）</a><span class="desc">世界十大名菜之一，蒜油配弹牙意面的极简传统味。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>海鲜意面</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/pasta-vongole.html">Pasta Vongole（蛤蜊意面）</a><span class="desc">蒜、欧芹、橄榄油与鲜蛤蜊汁的经典海鲜面，加柠檬点睛。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-vongole-recipe.html">Spaghetti Vongole（意式蛤蜊意面）</a><span class="desc">慢火把蛤蜊煨出鲜美汤汁，裹住每一根意面的意大利经典。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-vongole.html">Spaghetti Vongole（蛤蜊意面）</a><span class="desc">用新鲜蛤蜊、白葡萄酒和圣女果烹制的经典海鲜意面。</span></li>
-    <li><a class="name" href="pasta-recipes/linguine-alle-vongole.html">Linguine alle Vongole（蛤蜊扁面）</a><span class="desc">白葡萄酒烩蛤蜊配蒜香欧芹，咸鲜海味的地中海灵魂意面。</span></li>
-    <li><a class="name" href="pasta-recipes/mussels-pasta.html">Mussel Pasta（贻贝意面）</a><span class="desc">贻贝配大蒜、刺山柑与白葡萄酒，蒸出的海味汤汁渗入每一根 linguine。</span></li>
-    <li><a class="name" href="pasta-recipes/seafood-pasta-marinara.html">Seafood Fettuccine Marinara（海鲜番茄宽面）</a><span class="desc">蛤蜊、大虾与鱿鱼裹上甜樱桃番茄酱，蛤蜊汁回锅带来满口海洋风味。</span></li>
-    <li><a class="name" href="pasta-recipes/seafood-pasta-recipe.html">Seafood Pasta（意式海鲜意面）</a><span class="desc">蛤蜊、flathead 鱼与鲜虾配圣女果芦笋，撒上脆松子面包糠。</span></li>
-    <li><a class="name" href="pasta-recipes/seafood-pasta.html">Seafood Pasta（海鲜卡邦尼意面）</a><span class="desc">鱿鱼、大虾、贻贝与蛋液酱汁在佩斯卡拉海岸演绎的海鲜卡邦尼。</span></li>
-    <li><a class="name" href="pasta-recipes/seafood-spaghetti.html">Seafood Spaghetti（海鲜意大利面）</a><span class="desc">扇贝、大虾、鱿鱼等海鲜配 Chitarra 意面的鲜美轻食。</span></li>
-    <li><a class="name" href="pasta-recipes/sea-and-mountains-pasta.html">Sea and Mountains Pasta（山海意面）</a><span class="desc">山间牛肝菌与海中蛤蜊大虾的结合，白葡萄酒酱配 calamarata 意面。</span></li>
-    <li><a class="name" href="pasta-recipes/creamy-salmon-pasta.html">Creamy Salmon Pasta（奶油三文鱼意面）</a><span class="desc">不到 15 分钟的奶香治愈系，烟熏三文鱼配刺山柑与柠檬。</span></li>
-    <li><a class="name" href="pasta-recipes/salmon-pasta.html">Salmon Pasta（三文鱼意面）</a><span class="desc">香煎三文鱼配番茄、酸豆与马斯卡彭的清爽地中海味。</span></li>
-    <li><a class="name" href="pasta-recipes/salmon-pasta-recipe.html">Salmon Pasta（三文鱼意面）</a><span class="desc">以三文鱼为主角、奶油奶酪打造顺滑酱汁的清爽快手料理。</span></li>
-    <li><a class="name" href="pasta-recipes/tuna-pasta-recipe.html">Tuna Pasta（金枪鱼意面）</a><span class="desc">金枪鱼、酸豆、樱桃番茄配辣椒，地中海风味十分钟酱汁。</span></li>
-    <li><a class="name" href="pasta-recipes/10-minute-tuna-pasta.html">10 Minute Tuna Pasta（十分钟金枪鱼意面）</a><span class="desc">酸豆金枪鱼与番茄，不足 $7 的 10 分钟快手晚餐。</span></li>
-    <li><a class="name" href="pasta-recipes/how-to-make-tuna-pasta.html">Tuna Pasta（金枪鱼意面）</a><span class="desc">柠檬汁浸透的金枪鱼配螺旋面，可热可凉，简单清爽的意大利夏日味道。</span></li>
-    <li><a class="name" href="pasta-recipes/tuna-pasta.html">Tuna Pasta（金枪鱼意面）</a><span class="desc">腌制金枪鱼配酸豆与圣女果，充满地中海风味。</span></li>
-    <li><a class="name" href="pasta-recipes/lemon-shrimp-pasta-sauce.html">Lemon Shrimp Pasta Sauce（柠檬鲜虾开心果意面）</a><span class="desc">无奶油却极致丝滑的开心果酱搭配鲜虾柠檬。</span></li>
-    <li><a class="name" href="pasta-recipes/lemon-linguine.html">Lemon Linguine with Shrimps and Pistachios（柠檬扁意面配虾仁与开心果）</a><span class="desc">索伦托半岛的清爽柠檬扁面，虾仁与开心果带来层次口感。</span></li>
-    <li><a class="name" href="pasta-recipes/scallop-pasta-recipe.html">Scallop Pasta（扇贝意面）</a><span class="desc">轻煎扇贝配樱桃番茄、柠檬与辣椒的极简地中海味。</span></li>
-    <li><a class="name" href="pasta-recipes/shrimp-pasta-recipe.html">Shrimp Pasta（香辣鲜虾意面）</a><span class="desc">牛肝菌、西葫芦与鲜虾配辣油的浓郁一锅煮。</span></li>
-    <li><a class="name" href="pasta-recipes/prawns-pasta.html">Prawns Pasta（开心果虾仁意面）</a><span class="desc">虾仁裹上开心果青酱、配 Tagliatelle 的坚果海鲜组合。</span></li>
-    <li><a class="name" href="pasta-recipes/pappardelle-alla-martina.html">Pappardelle alla Martina（马丁娜宽面）</a><span class="desc">鲜虾芦笋豌豆配白葡萄酒的清新夏日宽面。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-alla-luciana.html">Pasta alla Luciana（卢恰纳章鱼意面）</a><span class="desc">小章鱼、酸豆、黑橄榄烩入番茄酱的那不勒斯风味。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>番茄与家常</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/spaghetti-al-pomodoro.html">Spaghetti al Pomodoro（番茄意面）</a><span class="desc">15 分钟快手配方，用新鲜熟番茄和罗勒熬出风味最浓郁的番茄酱。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-with-fresh-tomatoes.html">Pasta with Fresh Tomatoes（新鲜番茄意面）</a><span class="desc">樱桃番茄在橄榄油中爆裂出汁，靠煮面水乳化出鲜亮丝滑的经典番茄意面。</span></li>
-    <li><a class="name" href="pasta-recipes/cherry-tomato-pasta.html">Cherry Tomato Pasta（樱桃番茄意面）</a><span class="desc">新鲜樱桃番茄配罗勒，马斯卡彭奶酪与 Pecorino 收尾，不靠奶油同样绵密浓稠。</span></li>
-    <li><a class="name" href="pasta-recipes/tomato-and-basil-pasta.html">Tomato and Basil Pasta（番茄罗勒意面）</a><span class="desc">圣女果在橄榄油中爆皮、佐以大蒜罗勒的鲜香意大利面。</span></li>
-    <li><a class="name" href="pasta-recipes/cherry-tomato-pasta-with-burrata.html">Cherry Tomato Pasta with Burrata（奶油樱桃番茄布拉塔意面）</a><span class="desc">樱桃番茄打酱配布拉塔奶酪，15 分钟快手治愈面。</span></li>
-    <li><a class="name" href="pasta-recipes/tomato-ricotta-pasta.html">Tomato Ricotta Pasta（番茄乳清干酪意面）</a><span class="desc">三种食材做出奶油般粉色酱汁的快手经典。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-with-tomato-sauce.html">Spaghetti with Tomato Sauce（番茄酱意面）</a><span class="desc">只靠洋葱、胡萝卜、芹菜与足时炖煮成就的纯粹番茄意面。</span></li>
-    <li><a class="name" href="pasta-recipes/marinara-sauce.html">Marinara Sauce（那不勒斯番茄酱）</a><span class="desc">只用好番茄与两种香草熬出的极简经典酱汁。</span></li>
-    <li><a class="name" href="pasta-recipes/tomato-passata.html">Tomato Passata at Home（自制番茄帕萨塔）</a><span class="desc">5 千克番茄装瓶保存的意大利家庭「液体黄金」仪式。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>肉酱与慢炖</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/the-ultimate-bolognese-sauce-recipe.html">The Ultimate Bolognese Sauce（终极博洛尼亚肉酱）</a><span class="desc">猪牛肉加 pancetta 慢炖四小时，浓郁天鹅绒质地。</span></li>
-    <li><a class="name" href="pasta-recipes/authentic-bolognese-sauce.html">Authentic Bolognese Sauce（正宗博洛尼亚肉酱）</a><span class="desc">三种肉末与三种番茄慢慢炖足 5 小时，耐心成就最嫩滑的正宗博洛尼亚肉酱。</span></li>
-    <li><a class="name" href="pasta-recipes/ancient-bolognese-sauce.html">Ancient Bolognese Sauce（古法波隆那肉酱）</a><span class="desc">用鸡肝、guanciale 与便宜肉部位慢炖 5 小时的复古配方。</span></li>
-    <li><a class="name" href="pasta-recipes/bolognese-sauce.html">Bolognese Sauce（博洛尼亚肉酱）</a><span class="desc">猪牛肉糜慢火炖煮的经典肉酱，秘密食材是多汁的 pancetta。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-bolognese.html">Spaghetti Bolognese（意式博洛尼亚肉酱面）</a><span class="desc">双种肉糜配浓缩番茄膏慢炖 3 小时的经典肉酱面。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-sauce-recipe.html">Pasta Sauce（意式肉酱面酱）</a><span class="desc">帕尔玛火腿加意大利香肠、红酒重制的博洛尼亚风味。</span></li>
-    <li><a class="name" href="pasta-recipes/genovese-sauce.html">Genovese Sauce（那不勒斯洋葱慢炖牛肉酱）</a><span class="desc">不用番茄、靠 6 小时慢炖融化的洋葱与牛肉，是那不勒斯隐藏珍宝。</span></li>
-    <li><a class="name" href="pasta-recipes/short-ribs-ragu.html">Short Ribs Ragù Pasta（牛小排肉酱意面）</a><span class="desc">带骨牛小排煎香后配红酒番茄慢炖 3 小时，入口即化，拌宽意面。</span></li>
-    <li><a class="name" href="pasta-recipes/slow-cooked-beef-ragu-pasta.html">Slow Cooked Beef Ragù Pasta（慢炖牛肉肉酱意面）</a><span class="desc">牛肩肉红酒慢炖 4 小时的浓郁肉酱配宽面。</span></li>
-    <li><a class="name" href="pasta-recipes/pappardelle-ragu.html">Pappardelle Ragù（帕帕德尔宽面配野猪肉肉酱）</a><span class="desc">野猪肉加红酒腌制后慢炖数小时的意式家族传统佳肴。</span></li>
-    <li><a class="name" href="pasta-recipes/how-to-make-chicken-pasta.html">Chicken Pasta（鸡肉意面）</a><span class="desc">鸡腿慢炖三小时成撕丝状酱配 penne 的人气家常菜。</span></li>
-    <li><a class="name" href="pasta-recipes/how-spaghetti-and-meatballs-is-made-in-italy.html">Spaghetti and Meatballs（意面配肉丸·意大利做法）</a><span class="desc">阿布鲁佐迷你小肉丸配 Chitarra 粗意面，意面与肉同入口的地方名菜。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-meatballs-recipe.html">Spaghetti Meatballs（意式肉丸意面）</a><span class="desc">Nonna 地道做法的迷你肉丸配慢炖帕萨塔酱意面。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-meatballs.html">Spaghetti Meatballs（迷你肉丸意式细面）</a><span class="desc">奶奶 Igea 代代相传的迷你肉丸配慢炖番茄酱。</span></li>
-    <li><a class="name" href="pasta-recipes/nduja-pasta.html">Nduja Pasta（Nduja 辣肉酱意面）</a><span class="desc">卡拉布里亚辣味涂抹肉肠融化进番茄酱，甜洋葱平衡辣度的浓烈意面。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>奶酪与奶油</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/the-best-pasta-alfredo.html">The Best Pasta Alfredo（阿尔弗雷多意面）</a><span class="desc">只靠黄油、Pecorino 和面汤乳化，不加奶油也零失败丝滑。</span></li>
-    <li><a class="name" href="pasta-recipes/alfredo-pasta.html">Alfredo Pasta（阿尔弗雷多意面）</a><span class="desc">手工蛋面裹黄油与帕玛森的正宗罗马做法。</span></li>
-    <li><a class="name" href="pasta-recipes/cheese-wheel-risotto-alfredo.html">Cheese Wheel Risotto Alfredo（奶酪轮阿尔弗雷多烩饭）</a><span class="desc">无奶油却绵密的经典烩饭，直接在 Grana Padano 奶酪轮里完成。</span></li>
-    <li><a class="name" href="pasta-recipes/mushroom-alfredo-pasta.html">Mushroom Alfredo Pasta（蘑菇阿尔弗雷多意面）</a><span class="desc">牛肝菌加现刨新鲜松露，黄油与帕玛森融合出丝滑高级酱汁。</span></li>
-    <li><a class="name" href="pasta-recipes/fettuccine-boscaiola.html">Fettuccine Boscaiola（森林风味宽面）</a><span class="desc">不用奶油，用马斯卡彭加佩科里诺打造丝滑酱汁，配香肠与蘑菇。</span></li>
-    <li><a class="name" href="pasta-recipes/creamy-saffron-pasta.html">Creamy Saffron Pasta（奶油藏红花意面）</a><span class="desc">藏红花浸泡出金黄香气，配酥脆 guanciale 与 Pecorino。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-alla-norcina.html">Pasta alla Norcina（诺尔恰香肠奶油意面）</a><span class="desc">翁布里亚诺尔恰的奢华意面：香肠、里科塔奶油酱与现刨松露。</span></li>
-    <li><a class="name" href="pasta-recipes/four-cheese-pasta.html">Four Cheese Pasta（四奶酪意面）</a><span class="desc">以 Gorgonzola 为主角的比 Carbonara 还丝滑的奶酪盛宴。</span></li>
-    <li><a class="name" href="pasta-recipes/penne-alla-vodka-recipe.html">Penne alla Vodka（伏特加奶油斜管面）</a><span class="desc">妈妈配方改编的复古奶油粉红酱，用伏特加和培根回归本真。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>素食</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/pasta-with-potatoes.html">Pasta with Potatoes（意面土豆）</a><span class="desc">那不勒斯一锅意面，土豆化进蔬菜高汤裹住意面，无奶油却丝滑浓稠。</span></li>
-    <li><a class="name" href="pasta-recipes/potato-pasta.html">Potato Pasta（土豆意面）</a><span class="desc">那不勒斯风土豆+生面同锅煮的超浓郁乡土味。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-with-broccoli.html">Pasta with Broccoli（西兰花意面）</a><span class="desc">西兰花打酱配 Ricotta 的 10 分钟素食意面。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-broccoli-recipe.html">Pasta Broccoli（西兰花意面）</a><span class="desc">只用西兰花、蒜和橄榄油，压碎西兰花配面汤便能无奶油做出绵密酱汁。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-broccoli.html">Pasta Broccoli and Ricotta（西兰花里科塔意面）</a><span class="desc">西兰花与意面同锅烹煮、裹上丝滑里科塔奶油的一锅意面。</span></li>
-    <li><a class="name" href="pasta-recipes/15-minute-creamy-mushroom-pasta.html">15-Minute Creamy Mushroom Pasta（15 分钟奶油蘑菇意面）</a><span class="desc">奶香蘑菇与 Pecorino 的素食满足，15 分钟内完成。</span></li>
-    <li><a class="name" href="pasta-recipes/creamy-mushroom-pasta.html">Creamy Mushroom Pasta（奶油蘑菇意面）</a><span class="desc">不加奶油却浓郁丝滑的蘑菇意面，25 分钟搞定工作日快手素食。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-with-pumpkin.html">Pasta with Pumpkin（南瓜意面）</a><span class="desc">烤南瓜打成丝滑酱汁，无奶油也浓郁，秋夜治愈首选。</span></li>
-    <li><a class="name" href="pasta-recipes/kale-pasta.html">Kale Pasta（羽衣甘蓝意面）</a><span class="desc">羽衣甘蓝配黑橄榄与干辣椒的清新快手意面。</span></li>
-    <li><a class="name" href="pasta-recipes/eggplant-pasta.html">Eggplant Pasta（卡拉布里亚茄子意面）</a><span class="desc">把帕玛森焗茄子变成意面，茄子、番茄与奶酪的甜美每一口都击中味蕾。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-e-fagioli-recipe.html">Pasta e Fagioli（意面豆汤）</a><span class="desc">体现意大利「贫民料理」哲学的暖心意面豆汤。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-e-fagioli.html">Pasta e Fagioli（豆豆意大利面）</a><span class="desc">源自「穷人菜」传统的意式暖心炖面，手工 sagne 配白豆与番茄。</span></li>
-    <li><a class="name" href="pasta-recipes/lentils-pasta.html">Lentils Pasta（扁豆意面）</a><span class="desc">一锅炖扁豆高汤配小粒意面，健康营养的素食暖心菜。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-and-peas.html">Pasta &amp; Peas（意面与豌豆）</a><span class="desc">十分钟上桌的传统意大利菜，面汤淀粉自然浓稠，薄荷改良清新点睛。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-with-chickpeas.html">Pasta with Chickpeas（鹰嘴豆意面）</a><span class="desc">一锅煮的丝滑鹰嘴豆番茄酱意面，鹰嘴豆为主角，简单却满是蛋白质与风味。</span></li>
-    <li><a class="name" href="pasta-recipes/rigatoni-ortolana.html">Rigatoni all'Ortolana（蔬菜烩意面）</a><span class="desc">慢炖田园蔬菜素食肉酱配 Rigatoni，连肉食者都忍不住。</span></li>
-    <li><a class="name" href="pasta-recipes/vegetarian-pasta-recipe.html">Vegetarian Pasta（田园蔬菜意面）</a><span class="desc">茄子、西葫芦、甜椒等时蔬炖成的素酱配 Rigatoni。</span></li>
-    <li><a class="name" href="pasta-recipes/vegetarian-rigatoni.html">Vegetarian Rigatoni（素食通心粉）</a><span class="desc">茄子西葫芦炒熟后拌罗勒青酱的素食 Rigatoni。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>千层面与烤意面</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/how-to-make-italian-lasagna-recipe.html">Italian Lasagna（意大利千层面）</a><span class="desc">博洛尼亚正宗做法：菠菜意面片、慢炖肉酱与白酱叠成六到七层。</span></li>
-    <li><a class="name" href="pasta-recipes/beef-lasagna-recipe.html">Beef Lasagna（牛肉千层面）</a><span class="desc">三层奶酪加白酱与自制番茄酱，小牛肉猪肉末层层相叠慢火炖出。</span></li>
-    <li><a class="name" href="pasta-recipes/white-lasagna-recipe.html">White Lasagna（白酱千层面）</a><span class="desc">无番茄的变奏千层面，奶油白酱配牛肉蘑菇西兰花馅，外脆内软。</span></li>
-    <li><a class="name" href="pasta-recipes/creamy-lasagna-recipe.html">Creamy Lasagna（奶油千层面）</a><span class="desc">西兰花西葫芦牛肉与白酱打造的白酱奶油千层面。</span></li>
-    <li><a class="name" href="pasta-recipes/vegetarian-lasagna.html">Vegetarian Lasagna（意式素千层面）</a><span class="desc">蘑菇西葫芦配 Ricotta 的秘密酱汁，素食也满口惊艳。</span></li>
-    <li><a class="name" href="pasta-recipes/lasagna-recipe-made-by-nonna.html">Lasagna made by Nonna Igea（奶奶的意式千层面）</a><span class="desc">用无数张手工薄饼代替面片、层层夹入肉馅奶酪的 Abruzzo 传统千层面。</span></li>
-    <li><a class="name" href="pasta-recipes/homemade-lasagna.html">Homemade Lasagna（家常千层面）</a><span class="desc">小牛肉猪肉末与牛肝菌层层叠出浓郁的意式经典千层面。</span></li>
-    <li><a class="name" href="pasta-recipes/baked-rigatoni-pasta-al-forno.html">Baked Rigatoni（焗烤里加通心粉）</a><span class="desc">南方卡拉布里亚风味的烤通心粉，酥脆萨拉米、多汁肉馅加鸡蛋的惊喜组合。</span></li>
-    <li><a class="name" href="pasta-recipes/baked-pasta.html">Baked Pasta（焗烤意面配西兰花和香肠）</a><span class="desc">里加通心粉裹白酱与马苏里拉，配西兰花香肠烤至芝士酥脆。</span></li>
-    <li><a class="name" href="pasta-recipes/stuffed-shell-pasta.html">Stuffed Shell Pasta（烤填馅贝壳意面）</a><span class="desc">贝壳形意面填满乳清奶酪、菠菜和肉豆蔻，浇番茄酱和马苏里拉烤至金黄。</span></li>
-    <li><a class="name" href="pasta-recipes/macaroni-and-cheese-recipe.html">Macaroni and Cheese（意式芝士通心粉）</a><span class="desc">四种芝士烘烤出的正宗意式芝士通心粉，告别纸盒速食。</span></li>
-    <li><a class="name" href="pasta-recipes/cannelloni-with-spinach-and-ricotta.html">Cannelloni with Spinach and Ricotta（菠菜瑞可塔意大利卷）</a><span class="desc">可丽饼皮卷菠菜瑞可塔馅，配番茄酱与白酱焗烤。</span></li>
-    <li><a class="name" href="pasta-recipes/rolled-eggplant-involtini-pasta.html">Rolled Eggplant Involtini Pasta（茄子意面卷）</a><span class="desc">西西里经典素食，烤茄子片卷着意面和番茄酱，露出的面条在烤箱里变酥脆。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>意式饺子与馄饨</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/how-to-make-ravioli.html">Ravioli（意式饺子·菠菜奶酪馅）</a><span class="desc">Nonna Igea 六十年的菠菜 ricotta 馅半月形意式饺子秘方。</span></li>
-    <li><a class="name" href="pasta-recipes/how-to-make-homemade-ravioli-pasta.html">Homemade Ravioli Pasta（自制意式饺子）</a><span class="desc">从零擀面皮、包入菠菜瑞可塔馅的手工饺子全教程。</span></li>
-    <li><a class="name" href="pasta-recipes/ravioli-butter-and-sage.html">Ravioli Butter and Sage（黄油鼠尾草意饺）</a><span class="desc">焦化黄油鼠尾草酱裹住嫩意饺，坚果香与酥脆叶片的经典搭配。</span></li>
-    <li><a class="name" href="pasta-recipes/ravioli-alla-carbonara.html">Ravioli alla Carbonara（培根蛋酱意式饺子）</a><span class="desc">自制面团裹 Pecorino 蛋馅与酥脆猪颊肉的创意 Carbonara。</span></li>
-    <li><a class="name" href="pasta-recipes/ravioli-with-cream-porcini-mushrooms-and-sausage.html">Ravioli with Porcini Cream and Sausage（牛肝菌奶油香肠意式饺子）</a><span class="desc">香肠牛肝菌奶油酱浇在新鲜饺子上的山里风味。</span></li>
-    <li><a class="name" href="pasta-recipes/egg-yolk-ravioli.html">Egg Yolk Ravioli（蛋黄意大利饺子）</a><span class="desc">米其林星级配方，流心蛋黄藏在菠菜 ricotta 馅中央的大饺子。</span></li>
-    <li><a class="name" href="pasta-recipes/gnoccoloni-recipe.html">Gnoccoloni（巨型意式饺子）</a><span class="desc">Gnocchi 与 Cannelloni 的合体，月牙形小馄饨填入 Ricotta 菠菜馅。</span></li>
-    <li><a class="name" href="pasta-recipes/fried-ravioli-recipe.html">Fried Ravioli（炸甜味意式馄饨）</a><span class="desc">阿布鲁佐圣诞甜点 Caggiunitt，酥脆外皮裹流心葡萄果酱。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>意式团子 Gnocchi</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/how-to-make-potato-gnocchi.html">Potato Gnocchi（意式土豆面团）</a><span class="desc">Nonna 传授的三食材土豆面疙瘩，讲究温度、手法与比例的绵软口感。</span></li>
-    <li><a class="name" href="pasta-recipes/potato-gnocchi-recipe.html">Potato Gnocchi（意式土豆团子）</a><span class="desc">只靠土豆、面粉和一颗鸡蛋做出入口即化的 Nonna 招牌 Gnocchi。</span></li>
-    <li><a class="name" href="pasta-recipes/potato-gnocchi.html">Potato Gnocchi（意式土豆面疙瘩）</a><span class="desc">周四午餐的主角，跟着奶奶的配方把握土豆质地，做出柔软美味的 Gnocchi。</span></li>
-    <li><a class="name" href="pasta-recipes/homemade-gnocchi.html">Homemade Gnocchi（自制意式土豆团子）</a><span class="desc">Nonna Maria 手把手教你做轻盈蓬松的卡拉布里亚风味团子。</span></li>
-    <li><a class="name" href="pasta-recipes/how-to-make-ricotta-gnocchi-recipe.html">Ricotta Gnocchi（意式乳清干酪团子）</a><span class="desc">用乳清干酪取代土豆，10 分钟捏出松软团子，配黄油柠檬薄荷酱。</span></li>
-    <li><a class="name" href="pasta-recipes/ricotta-gnocchi.html">Ricotta Gnocchi（里科塔奶酪意面疙瘩）</a><span class="desc">比传统 gnocchi 更快更软的奶酪小疙瘩，配番茄罗勒酱绝配。</span></li>
-    <li><a class="name" href="pasta-recipes/pumpkin-gnocchi-recipe.html">Pumpkin Gnocchi（南瓜意式面疙瘩）</a><span class="desc">烤南瓜揉入佩科里诺制成时令 gnocchi，裹满焦香黄油鼠尾草酱。</span></li>
-    <li><a class="name" href="pasta-recipes/gnocchi-pesto-sausages.html">Gnocchi Pesto and Sausages（意式香肠青酱土豆团子）</a><span class="desc">松软土豆丸子裹奶油青酱，配意大利香肠与蘑菇。</span></li>
-    <li><a class="name" href="pasta-recipes/gnocchi-alla-sorrentina.html">Gnocchi alla Sorrentina（索伦托式烤团子）</a><span class="desc">里科塔团子铺满番茄酱与水牛莫扎里拉，烤箱焗至金黄。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>鲜制面与面团</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/fresh-pasta.html">Fresh Pasta（自制新鲜意面）</a><span class="desc">面粉+鸡蛋+semolina 手揉面团，附 Nonna 亲传全部要点。</span></li>
-    <li><a class="name" href="pasta-recipes/fresh-egg-pasta.html">Fresh Egg Pasta（奶奶的鲜制鸡蛋意面）</a><span class="desc">面粉加鸡蛋手作鲜意面，现煮即食或冷冻备用的基础技。</span></li>
-    <li><a class="name" href="pasta-recipes/fresh-spinach-pasta.html">Fresh Spinach Pasta（新鲜菠菜意面）</a><span class="desc">翠绿的菠菜面团，仅面粉、鸡蛋与嫩菠菜就能在家轻松擀出。</span></li>
-    <li><a class="name" href="pasta-recipes/egg-pasta.html">Egg Pasta Dough（鸡蛋意面面团）</a><span class="desc">奶奶的原创配方，擀面杖或压面机都能复刻的柔韧鸡蛋面。</span></li>
-    <li><a class="name" href="pasta-recipes/semolina-pasta-dough.html">Semolina Pasta Dough（粗粒小麦粉意面面团）</a><span class="desc">两食材几分钟搞定，能做猫耳朵和小贝壳面，干藏即取即用。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-alla-chitarra.html">Spaghetti alla Chitarra（吉他面·意式方形细意面）</a><span class="desc">只用面粉和鸡蛋手作的地道方形细意面。</span></li>
-    <li><a class="name" href="pasta-recipes/homemade-tagliatelle-pasta.html">Homemade Tagliatelle（自制意大利宽蛋面）</a><span class="desc">只用鸡蛋和面粉的传统做法，最经典的吃法就是配 Bolognese 肉酱。</span></li>
-    <li><a class="name" href="pasta-recipes/pappardelle-pasta-recipe.html">Pappardelle Pasta（自制意大利宽面）</a><span class="desc">宽如缎带的蛋面最配慢炖浓酱，名字就意为「大口吞食」。</span></li>
-    <li><a class="name" href="pasta-recipes/orecchiette.html">Orecchiette（猫耳朵意面）</a><span class="desc">只用两种食材手作的普利亚「小耳朵」意面，可现煮也可风干保存数月。</span></li>
-    <li><a class="name" href="pasta-recipes/homemade-cavatelli.html">Homemade Cavatelli（自制 Cavatelli 意面）</a><span class="desc">只用粗粒小麦粉和温水，用刀或手指就能搓出普利亚式贝壳小意面。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>沙拉与凉面</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/italian-pasta-salad.html">Italian Pasta Salad（意式凉拌意面沙拉）</a><span class="desc">小番茄、金枪鱼与 Provolone 的清爽地中海野餐之选。</span></li>
-    <li><a class="name" href="pasta-recipes/tuna-pasta-salad.html">Tuna Pasta Salad（金枪鱼意面沙拉）</a><span class="desc">金枪鱼、蔬菜与蛋黄酱拌出的清爽冷沙拉，适合午餐或野餐。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-alla-checca.html">Pasta alla Checca（罗马冷拌意面）</a><span class="desc">免煮酱汁的生番茄冷意面沙拉，20 分钟宣告夏天到来。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>快手与其他</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/10-minute-lazy-pasta-recipe.html">10 Minute Lazy Pasta（10 分钟懒人意面）</a><span class="desc">去皮番茄配新鲜蛋面，10 分钟出餐厅级滋味的快手意面。</span></li>
-    <li><a class="name" href="pasta-recipes/easy-pasta-recipe.html">Easy Pasta Recipe（快手意面）</a><span class="desc">5 分钟、零切菜，番茄橄榄刺山柑酱还原 panzerotti 内馅的地中海风味。</span></li>
-    <li><a class="name" href="pasta-recipes/drunken-pasta.html">Drunken Pasta（醉意意面·红酒意面）</a><span class="desc">用梅洛红酒炖煮的半熟意面，配黑橄榄和佩科里诺奶酪碎。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-frittata.html">Spaghetti Frittata Carbonara（卡博纳拉意面煎蛋饼）</a><span class="desc">把 carbonara 和 frittata 结合，外脆内奶香、可冷热食用的切片天堂。</span></li>
-    <li><a class="name" href="pasta-recipes/butter-pasta-with-anchovies.html">Butter Pasta with Anchovies（黄油凤尾鱼意面）</a><span class="desc">只需意面、黄油、凤尾鱼三样，10 分钟做出咸鲜浓郁的奶油挂汁酱。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-with-salami.html">Pasta with Salami（萨拉米意面）</a><span class="desc">辛辣萨拉米与番茄酱 15 分钟快手意面。</span></li>
-    <li><a class="name" href="pasta-recipes/pancetta-pasta.html">Pancetta Pasta（帕切塔培根意面）</a><span class="desc">用意大利风干五花肉配番茄酱，仅靠三种食材的简约美味。</span></li>
-    <li><a class="name" href="pasta-recipes/italian-sausage-pasta.html">Italian Sausage Pasta with Mushroom（意大利香肠蘑菇意面）</a><span class="desc">香肠、蘑菇加黄油煮面水做成 10 分钟丝滑奶油面。</span></li>
-    <li><a class="name" href="pasta-recipes/mushroom-pasta-recipe.html">Mushroom Pasta（意式香肠蘑菇意面）</a><span class="desc">牛肝菌与香肠肉糜交融，一缕松露油让所有人无法抗拒。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-with-breadcrumbs.html">Pasta with Breadcrumbs（面包糠意面）</a><span class="desc">意大利南部的穷人大餐，用陈面包烤成金黄色的酥脆面包糠代替干酪拌面。</span></li>
-    <li><a class="name" href="pasta-recipes/spaghetti-al-limone.html">Spaghetti al Limone（柠檬意面）</a><span class="desc">满溢西西里柠檬香气的清爽地中海料理，靠 pecorino 而非奶油做出绵密口感。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-al-limone.html">Pasta al Limone（柠檬意面）</a><span class="desc">柠檬与薄荷带来意大利夏日清新感的 15 分钟轻食。</span></li>
-    <li><a class="name" href="pasta-recipes/italian-minestrone-soup.html">Italian Minestrone Soup（意大利蔬菜浓汤）</a><span class="desc">Cucina Povera 安慰汤品，帕玛森外皮是秘密武器。</span></li>
-    <li><a class="name" href="pasta-recipes/saffron-risotto.html">Saffron Risotto（藏红花烩饭）</a><span class="desc">源自米兰的经典 Risotto Milanese，藏红花、黄油与白葡萄酒打造的金色绵滑烩饭。</span></li>
-    <li><a class="name" href="pasta-recipes/risotto-with-radicchio.html">Risotto with Radicchio（菊苣烩饭）</a><span class="desc">黄油、Gorgonzola 与菊苣苦味的平衡之作，奶油般丝滑。</span></li>
-    <li><a class="name" href="pasta-recipes/cheap-pasta-recipes.html">5 Cheap Pasta Recipes（5 道平价意面）</a><span class="desc">平价意面合集，介绍 5 道出自 cucina povera"穷人的厨房"理念的意大利家常菜。</span></li>
-    <li><a class="name" href="pasta-recipes/top-5-italian-pasta-recipes.html">Top 5 Italian Pasta Recipes（意大利意面前五排行）</a><span class="desc">指南文，推荐柠檬意面、肉丸、Carbonara、Gnocchi 与蛤蜊扁面。</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>指南与探店</h2>
-  <ul>
-    <li><a class="name" href="pasta-recipes/types-of-pasta-shapes.html">Types of Pasta Shapes（全球最受欢迎的意面形状）</a><span class="desc">揭秘 Top 10 意面形状榜，附 Vincenzo 对遗珠的点评。</span></li>
-    <li><a class="name" href="pasta-recipes/what-sauce-to-serve-with-every-pasta-shape.html">Pasta Shape and Sauce Pairing（意面形状与酱汁搭配指南）</a><span class="desc">按长/宽/管/螺旋等分类给出完整搭配法则与煮面黄金规则。</span></li>
-    <li><a class="name" href="pasta-recipes/cheap-vs-expensive-pasta.html">Cheap VS Expensive Pasta（平价 VS 贵价意面选购指南）</a><span class="desc">从颜色、干燥工艺、营养与口感拆解意面为何价差巨大。</span></li>
-    <li><a class="name" href="pasta-recipes/how-dry-pasta-is-made.html">How Dry Pasta is Made（意大利干意面是如何制成的）</a><span class="desc">探厂指南：手工意面只用粗粒小麦粉和水，铜模挤压加慢速干燥，远胜工业意面。</span></li>
-    <li><a class="name" href="pasta-recipes/pasta-wok-hack.html">Pasta Wok Hack（意面炒锅妙招）</a><span class="desc">用炒锅做 Aglio e Olio 与 Carbonara 的实验，受热均匀、挂酱更佳。</span></li>
-    <li><a class="name" href="pasta-recipes/best-cacio-e-pepe-in-rome.html">Best Cacio e Pepe in Rome（罗马 Cacio e Pepe 探店指南）</a><span class="desc">三家店加牧羊人起源传说，罗马必吃清单。</span></li>
-    <li><a class="name" href="pasta-recipes/best-carbonara-in-rome.html">Best Carbonara in Rome（罗马 Carbonara 探店指南）</a><span class="desc">三家绝对不用奶油的宝藏餐厅与家庭小馆。</span></li>
-    <li><a class="name" href="pasta-recipes/best-lasagna-in-bologna.html">Best Lasagna in Bologna（博洛尼亚千层面探店指南）</a><span class="desc">探访 Naldi、Osteria Broccaindosso 与 Sangiovese 三处博洛尼亚千层面。</span></li>
-    <li><a class="name" href="pasta-recipes/the-best-bolognese-sauce-in-bologna.html">Best Bolognese Sauce in Bologna（博洛尼亚肉酱探店指南）</a><span class="desc">在肉酱发源地博洛尼亚寻访三家店的经典 Ragu Bolognese。</span></li>
-  </ul>
-</section>
-
+  <a class="card" href="pasta.html">
+    <h2>意面大全</h2>
+    <div class="en">Pasta Collection</div>
+    <p>180 道意大利意面：Carbonara、Cacio e Pepe、千层面、Gnocchi、海鲜面、鲜制面等，全部附食材与步骤中文翻译。</p>
+    <span class="count">180 道</span>
+  </a>
+  <a class="card" href="sauces.html">
+    <h2>酱汁大全</h2>
+    <div class="en">Sauces Collection</div>
+    <p>意大利经典酱汁：青酱 Pesto、白酱、披萨番茄酱、Passata、肉酱、罗勒番茄酱等，中文翻译尽在其中。</p>
+    <span class="count">20 道</span>
+  </a>
 </main>
-
-<footer>
-  数据来自 <a href="https://www.vincenzosplate.com/">Vincenzo's Plate</a> · 每道菜的中文翻译见 pasta-recipes/ 子页面
-</footer>
+<footer>翻译整理自 <a href="https://www.vincenzosplate.com/">Vincenzo's Plate</a></footer>
 </body>
 </html>
